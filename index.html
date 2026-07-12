@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+
+<html lang="de">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HQReplika – Luxusmode</title>
+
+<style>
+
+*{
+
+  margin:0;
+
+  padding:0;
+
+  box-sizing:border-box;
+
+}
+
+html{
+
+  scroll-behavior:smooth;
+
+}
+
+html,body{
+
+  font-family:Arial,sans-serif;
+
+  background:#ffffff;
+
+  color:#222;
+
+  overflow-x:hidden;
+
+}
+
+/* Laufband */
+
+.banner-container{
+
+  width:100%;
+
+  overflow:hidden;
+
+  background:#b30000;
+
+  color:white;
+
+  font-size:1rem;
+
+  padding:10px 0;
+
+  position:fixed;
+
+  top:0;
+
+  left:0;
+
+  z-index:9999;
+
+}
+
+.banner-text{
+
+  display:inline-block;
+
+  white-space:nowrap;
+
+  padding-left:100%;
+
+  animation:scroll-left 15s linear infinite;
+
+}
+
+@keyframes scroll-left{
+
+  0%{
+
+    transform:translateX(0%);
+
+  }
+
+  100%{
+
+    transform:translateX(-100%);
+
+  }
+
+}
+
+/* Abstand */
+
+body{
+
+  padding-top:60px;
+
+}
+
+/* Top Bereich */
+
+.top-section{
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:60px;
+
+  padding:70px 20px;
+
+  max-width:1300px;
+
+  margin:auto;
+
+  flex-wrap:wrap;
+
+}
+
+.top-logo img{
+
+  width:340px;
+
+  max-width:95%;
+
+  border-radius:14px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+  transition:0.4s;
+
+}
+
+.top-logo img:hover{
+
+  transform:scale(1.03);
+
+}
+
+.top-text{
+
+  max-width:600px;
+
+}
+
+.top-text h1{
+
+  font-size:2.8rem;
+
+  margin-bottom:25px;
+
+  font-weight:600;
+
+}
+
+.top-text p{
+
+  font-size:1.1rem;
+
+  line-height:1.9;
+
+  color:#444;
+
+}
+
+/* Kategorien */
+
+.categories{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:35px;
+
+  padding:50px 20px;
+
+}
+
+.category{
+
+  width:280px;
+
+  text-decoration:none;
+
+  color:#222;
+
+  text-align:center;
+
+  transition:0.4s;
+
+}
+
+.category:hover{
+
+  transform:translateY(-8px);
+
+}
+
+.category img{
+
+  width:100%;
+
+  height:220px;
+
+  object-fit:cover;
+
+  border-radius:12px;
+
+  box-shadow:0 4px 14px rgba(0,0,0,0.08);
+
+  transition:0.4s;
+
+}
+
+.category img:hover{
+
+  transform:scale(1.03);
+
+}
+
+.category h3{
+
+  margin-top:18px;
+
+  font-size:1.15rem;
+
+  font-weight:600;
+
+}
+
+/* Vertrauen */
+
+.trust-section{
+
+  padding:90px 20px;
+
+  background:#f5f5f5;
+
+  text-align:center;
+
+}
+
+.trust-section h2{
+
+  font-size:2.4rem;
+
+  font-weight:600;
+
+  margin-bottom:60px;
+
+  letter-spacing:1px;
+
+}
+
+.trust-boxes{
+
+  display:flex;
+
+  flex-wrap:wrap;
+
+  justify-content:center;
+
+  gap:35px;
+
+  max-width:1300px;
+
+  margin:auto;
+
+}
+
+.trust-box{
+
+  background:#ffffff;
+
+  width:280px;
+
+  padding:35px 30px;
+
+  border-radius:14px;
+
+  box-shadow:0 4px 14px rgba(0,0,0,0.05);
+
+  transition:0.4s;
+
+}
+
+.trust-box:hover{
+
+  transform:translateY(-8px);
+
+}
+
+.trust-box h3{
+
+  font-size:1.2rem;
+
+  margin-bottom:18px;
+
+  font-weight:600;
+
+  color:#111;
+
+}
+
+.trust-box p{
+
+  font-size:1rem;
+
+  line-height:1.8;
+
+  color:#555;
+
+}
+
+/* WhatsApp */
+
+.whatsapp-float{
+
+  position:fixed;
+
+  right:20px;
+
+  bottom:20px;
+
+  background:#25D366;
+
+  color:white;
+
+  text-decoration:none;
+
+  padding:14px 22px;
+
+  border-radius:40px;
+
+  font-weight:bold;
+
+  z-index:9999;
+
+  box-shadow:0 4px 10px rgba(0,0,0,0.2);
+
+  transition:0.3s;
+
+}
+
+.whatsapp-float:hover{
+
+  background:#1ebe5d;
+
+  transform:scale(1.05);
+
+}
+
+/* Footer */
+
+footer{
+
+  text-align:center;
+
+  padding:40px 20px;
+
+  background:#ffffff;
+
+}
+
+footer p{
+
+  margin:8px 0;
+
+  color:#555;
+
+}
+
+footer a{
+
+  color:#111;
+
+  text-decoration:none;
+
+}
+
+/* Scroll Animation */
+
+.reveal{
+
+  opacity:0;
+
+  transform:translateY(70px);
+
+  transition:all 1s ease;
+
+}
+
+.reveal.active{
+
+  opacity:1;
+
+  transform:translateY(0);
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.top-section{
+
+  text-align:center;
+
+}
+
+.top-text h1{
+
+  font-size:2rem;
+
+}
+
+.top-logo img{
+
+  width:250px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Laufband -->
+
+<div class="banner-container">
+
+  <div class="banner-text">
+
+    🏆⚽️ WM 2026 Special - 10 Trikots nach Wahl für 130€ inklusive Versand (3-4 Tage) ⚽️🏆
+
+  </div>
+
+</div>
+
+<!-- Logo + Text -->
+
+<section class="top-section reveal">
+
+  <div class="top-logo">
+
+    <img src="https://i.postimg.cc/gjrX8rrQ/ce9b9c11-cc51-4a2f-a5cb-72b89c2fb910.jpg" alt="HQReplika Logo">
+
+  </div>
+
+  <div class="top-text">
+
+    <h1>Willkommen bei HQReplika</h1>
+
+    <p>
+
+      Dein Ansprechpartner für exklusive 1:1 Luxusmode, hochwertige Sneaker,
+
+      Taschen, Uhren und ausgewählte Premium-Produkte direkt vom Hersteller.
+
+      Höchste Qualität, professionelle Betreuung und schnelle Lieferung innerhalb Europas.
+
+    </p>
+
+  </div>
+
+</section>
+
+<!-- Kategorien -->
+
+<section class="categories reveal">
+
+<a href="kleidung.html" class="category">
+
+<img src="https://i.postimg.cc/zX1kST28/8-E4-B1-E0-E-C51-F-435-D-B6-B1-C44-A7543-D5-DB.png" alt="Kleidung">
+
+<h3>KLEIDUNG</h3>
+
+</a>
+
+<a href="schuhe.html" class="category">
+
+<img src="" alt="Schuhe / Sneaker">
+
+<h3>Schuhe</h3>
+
+</a>
+  
+<a href="bag.html" class="category">
+
+<img src="https://i.postimg.cc/Hsc51qwj/IMG-4933.jpg" alt="Taschen">
+
+<h3>TASCHEN</h3>
+
+</a>
+
+<a href="uhren.html" class="category">
+
+<img src="https://i.postimg.cc/DzK5h6Pr/IMG-4913.png" alt="Uhren">
+
+<h3>UHREN</h3>
+
+</a>
+
+<a href="trikot.html" class="category">
+
+<img src="https://i.postimg.cc/C1Dq8BKt/IMG-7856.jpg" alt="Trikots">
+
+<h3>TRIKOTS</h3>
+
+</a>
+
+</section>
+
+<!-- Vertrauen -->
+
+<section class="trust-section reveal">
+
+<h2>Service & Bestellung</h2>
+
+<div class="trust-boxes">
+
+<div class="trust-box">
+
+<h3>Persönlicher Kundenservice</h3>
+
+<p>
+
+Alle Anfragen werden direkt und persönlich über WhatsApp bearbeitet.
+
+Wir beraten individuell zu Produkten, Größen, Verfügbarkeit und Lieferung.
+
+</p>
+
+</div>
+
+<div class="trust-box">
+
+<h3>Sichere Zahlungsmöglichkeiten</h3>
+
+<p>
+
+Für unsere Kunden stehen verschiedene Zahlungsmethoden zur Verfügung.
+
+Alle Zahlungsinformationen werden transparent vor Abschluss der Bestellung mitgeteilt.
+
+</p>
+
+</div>
+
+<div class="trust-box">
+
+<h3>Vertrauen & Qualität</h3>
+
+<p>
+
+Diskretion, Zuverlässigkeit und höchste Produktqualität stehen bei uns im Mittelpunkt.
+
+Jede Bestellung wird sorgfältig geprüft und professionell bearbeitet.
+
+</p>
+
+</div>
+
+<div class="trust-box">
+
+<h3>Schneller Versand innerhalb Europas</h3>
+
+<p>
+
+Unsere Lieferungen erfolgen zuverlässig und schnell innerhalb Europas.
+
+Die meisten Bestellungen erreichen unsere Kunden innerhalb weniger Werktage.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- WhatsApp -->
+
+<a href="https://wa.me/491636437385" class="whatsapp-float" target="_blank">
+
+WhatsApp Support
+
+</a>
+
+<!-- Footer -->
+
+<footer>
+
+<p>© 2026 HQREPLIKA.com – Alle Rechte vorbehalten</p>
+
+<p>
+
+<a href="https://wa.me/491636437385">
+
+Kontakt via WhatsApp
+
+</a>
+
+</p>
+
+</footer>
+
+<!-- Scroll Animation Script -->
+
+<script>
+
+window.addEventListener('scroll', reveal);
+
+function reveal(){
+
+  const reveals = document.querySelectorAll('.reveal');
+
+  for(let i = 0; i < reveals.length; i++){
+
+    const windowHeight = window.innerHeight;
+
+    const revealTop = reveals[i].getBoundingClientRect().top;
+
+    const revealPoint = 100;
+
+    if(revealTop < windowHeight - revealPoint){
+
+      reveals[i].classList.add('active');
+
+    }
+
+  }
+
+}
+
+reveal();
+
+</script>
+
+</body>
+
+</html>
