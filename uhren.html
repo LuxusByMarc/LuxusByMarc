@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxus by Marc</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      height: 100px;
+    }
+
+    .logo img { height: 80px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #777; }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .content {
+      padding: 140px 20px 40px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product-card .details {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+.whatsapp-float:hover {
+  background: #1ebd5a;
+}
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <section class="content">
+    <h1>Uhren</h1>
+    <p>Alle hier gezeigten Uhren sind in Deutschland und innerhalb von 3-4 Tagen maximal bei dir (DHL mit Sendungsnummer). 
+       Alle Uhren kommen mit Box und Papiere.
+    Andere Modelle und Marken können jederzeit angefragt werden. Melde dich einfach via Whatsapp für Bestellungen und /oder Fragen.</p>
+  </section>
+
+<section class="products">
+
+<div class="product"><img src="https://i.postimg.cc/cJSB3j5h/IMG-8495.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/Z53LCZjQ/IMG-8496.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/NjTx5Ybp/IMG-8497.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/mgMStRVw/IMG-8498.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/htx0fgMM/IMG-8499.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/CxD4zYJH/IMG-8500.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/Sx8GJqVc/IMG-8501.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/nh71CZTv/IMG-8502.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/Dwsc8F5L/IMG-8503.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/2SvxVmTv/IMG-8504.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+<div class="product"><img src="https://i.postimg.cc/x1HPcYgk/IMG-8505.jpg" alt="Datejust 126300"><div class="ref">126300</div></div>
+
+<!-- 126334 -->
+<div class="product"><img src="https://i.postimg.cc/W4Z1kNHG/IMG-8506.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/g0h2ZzTD/IMG-8507.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/rp4wrVPZ/IMG-8508.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/43cx9fSL/IMG-8509.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/nLmhDFPw/IMG-8510.png" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/CK8xqhQt/IMG-8511.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/8Cvz6p0q/IMG-8512.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/5tz2C4rc/IMG-8513.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/3wGxv8qQ/IMG-8514.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/Qtrxg226/IMG-8515.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/85VPd22X/IMG-8516.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+<div class="product"><img src="https://i.postimg.cc/wvdT5CCf/IMG-8517.jpg" alt="Datejust 126334"><div class="ref">126334</div></div>
+
+<!-- 126333 -->
+<div class="product"><img src="https://i.postimg.cc/rwkkP1nj/IMG-8518.jpg" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/CxggQGPX/IMG-8519.jpg" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/FH44ByWq/IMG-8520.jpg" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/8zmSQ793/IMG-8521.png" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/CxsgTRXN/IMG-8522.jpg" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/GmxCw46C/IMG-8523.png" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/8zmSQ79q/IMG-8524.jpg" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/3xFT5kVz/IMG-8525.jpg" alt="Datejust 126333"><div class="ref">126333</div></div>
+<div class="product"><img src="https://i.postimg.cc/9QYh5DsX/IMG-8526.png" alt="Datejust 126333"><div class="ref">126333</div></div>
+
+<!-- 126331 -->
+<div class="product"><img src="https://i.postimg.cc/1t6B2qYm/IMG-8527.jpg" alt="Datejust 126331"><div class="ref">126331</div></div>
+<div class="product"><img src="https://i.postimg.cc/rmWj3rYR/IMG-8528.jpg" alt="Datejust 126331"><div class="ref">126331</div></div>
+<div class="product"><img src="https://i.postimg.cc/85W496nF/IMG-8529.jpg" alt="Datejust 126331"><div class="ref">126331</div></div>
+
+<!-- 126234 -->
+<div class="product"><img src="https://i.postimg.cc/HWvnRhX9/IMG-8530.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/05XjFBDd/IMG-8531.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/QNYCwy1g/IMG-8532.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/wx4MZGLN/IMG-8533.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/9Xg0KnZq/IMG-8534.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/xjp8h4MN/IMG-8535.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/mZpkJ5Cz/IMG-8536.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+<div class="product"><img src="https://i.postimg.cc/kMYGzpK5/IMG-8537.jpg" alt="Datejust 126234"><div class="ref">126234</div></div>
+
+<!-- ==================== Day Date ==================== -->
+<!-- 228238 -->
+<div class="product"><img src="https://i.postimg.cc/L8brMjvV/IMG-8538.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/Z5M1h6Vm/IMG-8539.png" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/BvPRZtwk/IMG-8540.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/bvS4YdF4/IMG-8541.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/Jz29WjPR/IMG-8542.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/yN326Wb6/IMG-8543.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/mr1KZh52/IMG-8544.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/N02ZGLz0/IMG-8545.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+<div class="product"><img src="https://i.postimg.cc/Dz4RfmM0/IMG-8546.jpg" alt="Day Date 228238"><div class="ref">228238</div></div>
+
+<!-- 228235 -->
+<div class="product"><img src="https://i.postimg.cc/yYdK46sW/IMG-8547.jpg" alt="Day Date 228235"><div class="ref">228235</div></div>
+<div class="product"><img src="https://i.postimg.cc/8P5GQkNz/IMG-8548.jpg" alt="Day Date 228235"><div class="ref">228235</div></div>
+<div class="product"><img src="https://i.postimg.cc/yYdK46sY/IMG-8549.jpg" alt="Day Date 228235"><div class="ref">228235</div></div>
+<div class="product"><img src="https://i.postimg.cc/zXBNZD8b/IMG-8550.png" alt="Day Date 228235"><div class="ref">228235</div></div>
+<div class="product"><img src="https://i.postimg.cc/5N0Jd9b9/IMG-8551.jpg" alt="Day Date 228235"><div class="ref">228235</div></div>
+<div class="product"><img src="https://i.postimg.cc/yYdK46s7/IMG-8552.jpg" alt="Day Date 228235"><div class="ref">228235</div></div>
+
+<!-- 228239 -->
+<div class="product"><img src="https://i.postimg.cc/65DmjBQg/IMG-8553.jpg" alt="Day Date 228239"><div class="ref">228239</div></div>
+<div class="product"><img src="https://i.postimg.cc/15LjCyzK/IMG-8554.jpg" alt="Day Date 228239"><div class="ref">228239</div></div>
+
+<!-- 128238 -->
+<div class="product"><img src="https://i.postimg.cc/tgRwP2JR/IMG-8555.jpg" alt="Day Date 128238"><div class="ref">128238</div></div>
+<div class="product"><img src="https://i.postimg.cc/434qtByG/IMG-8556.jpg" alt="Day Date 128238"><div class="ref">128238</div></div>
+<div class="product"><img src="https://i.postimg.cc/QdJvHR8G/IMG-8557.jpg" alt="Day Date 128238"><div class="ref">128238</div></div>
+
+<!-- 18238 -->
+<div class="product"><img src="https://i.postimg.cc/d1yBTy2w/IMG-8558.jpg" alt="Day Date 18238"><div class="ref">18238</div></div>
+
+<!-- ==================== Daytona ==================== -->
+<!-- 116500 -->
+<div class="product"><img src="https://i.postimg.cc/Dzq0JfWT/IMG-8559.jpg" alt="Daytona 116500"><div class="ref">116500</div></div>
+<div class="product"><img src="https://i.postimg.cc/wTG7nGKw/IMG-8560.png" alt="Daytona 116500"><div class="ref">116500</div></div>
+
+<!-- 116520 -->
+<div class="product"><img src="https://i.postimg.cc/wj5YD1kL/IMG-8561.png" alt="Daytona 116520"><div class="ref">116520</div></div>
+<div class="product"><img src="https://i.postimg.cc/sg5sK63K/IMG-8562.png" alt="Daytona 116520"><div class="ref">116520</div></div>
+
+<!-- 116503 -->
+<div class="product"><img src="https://i.postimg.cc/MZRwz3Qz/IMG-8563.jpg" alt="Daytona 116503"><div class="ref">116503</div></div>
+<div class="product"><img src="https://i.postimg.cc/3rph3fDt/IMG-8564.jpg" alt="Daytona 116503"><div class="ref">116503</div></div>
+
+<!-- 116508 -->
+<div class="product"><img src="https://i.postimg.cc/qMbjS4vg/IMG-8565.jpg" alt="Daytona 116508"><div class="ref">116508</div></div>
+<div class="product"><img src="https://i.postimg.cc/y8DvztDc/IMG-8566.jpg" alt="Daytona 116508"><div class="ref">116508</div></div>
+<div class="product"><img src="https://i.postimg.cc/6pFz6cZ1/IMG-8567.png" alt="Daytona 116508"><div class="ref">116508</div></div>
+<div class="product"><img src="https://i.postimg.cc/Mpnd8NnP/IMG-8568.jpg" alt="Daytona 116508"><div class="ref">116508</div></div>
+
+<!-- 116515 -->
+<div class="product"><img src="https://i.postimg.cc/KYkL9300/IMG-8569.jpg" alt="Daytona 116515"><div class="ref">116515</div></div>
+<div class="product"><img src="https://i.postimg.cc/W1fg6w7L/IMG-8570.jpg" alt="Daytona 116515"><div class="ref">116515</div></div>
+<div class="product"><img src="https://i.postimg.cc/W1fg6wwQ/IMG-8571.jpg" alt="Daytona 116515"><div class="ref">116515</div></div>
+
+<!-- 116518 -->
+<div class="product"><img src="https://i.postimg.cc/RhVZDjMK/IMG-8572.jpg" alt="Daytona 116518"><div class="ref">116518</div></div>
+
+<!-- ==================== GMT Master ==================== -->
+<!-- 126710 -->
+<div class="product"><img src="https://i.postimg.cc/cH3zNHLP/IMG-8573.jpg" alt="GMT Master 126710"><div class="ref">126710</div></div>
+<div class="product"><img src="https://i.postimg.cc/9M9kjMfV/IMG-8574.jpg" alt="GMT Master 126710"><div class="ref">126710</div></div>
+<div class="product"><img src="https://i.postimg.cc/JnXFWnhR/IMG-8575.jpg" alt="GMT Master 126710"><div class="ref">126710</div></div>
+<div class="product"><img src="https://i.postimg.cc/FRS6QRKN/IMG-8576.jpg" alt="GMT Master 126710"><div class="ref">126710</div></div>
+<div class="product"><img src="https://i.postimg.cc/W3ZyP343/IMG-8577.jpg" alt="GMT Master 126710"><div class="ref">126710</div></div>
+<div class="product"><img src="https://i.postimg.cc/bJn5jJvN/IMG-8578.jpg" alt="GMT Master 126710"><div class="ref">126710</div></div>
+
+<!-- 126720 -->
+<div class="product"><img src="https://i.postimg.cc/5tBvdWMS/IMG-8580.jpg" alt="GMT Master 126720"><div class="ref">126720</div></div>
+<div class="product"><img src="https://i.postimg.cc/y6QRzT2w/IMG-8579.jpg" alt="GMT Master 126720"><div class="ref">126720</div></div>
+
+<!-- 126711 -->
+<div class="product"><img src="https://i.postimg.cc/N0dsrd8G/IMG-8581.jpg" alt="GMT Master 126711"><div class="ref">126711</div></div>
+
+<!-- 126715 -->
+<div class="product"><img src="https://i.postimg.cc/L5t6h2ND/IMG-8582.jpg" alt="GMT Master 126715"><div class="ref">126715</div></div>
+<div class="product"><img src="https://i.postimg.cc/mkY2hB8J/IMG-8583.jpg" alt="GMT Master 126715"><div class="ref">126715</div></div>
+
+<!-- ==================== Yacht Master ==================== -->
+<!-- 126622 -->
+<div class="product"><img src="https://i.postimg.cc/pdf00ScM/IMG-8584.jpg" alt="Yacht Master 126622"><div class="ref">126622</div></div>
+<div class="product"><img src="https://i.postimg.cc/qRp1WGWM/IMG-8586.jpg" alt="Yacht Master 126622"><div class="ref">126622</div></div>
+<div class="product"><img src="https://i.postimg.cc/0Q9VhChj/IMG-8587.jpg" alt="Yacht Master 126622"><div class="ref">126622</div></div>
+<div class="product"><img src="https://i.postimg.cc/cHdFPcPt/IMG-8588.jpg" alt="Yacht Master 126622"><div class="ref">126622</div></div>
+
+<!-- 126621 -->
+<div class="product"><img src="https://i.postimg.cc/s2jSr0Dy/IMG-8589.jpg" alt="Yacht Master 126621"><div class="ref">126621</div></div>
+
+<!-- 126655 -->
+<div class="product"><img src="https://i.postimg.cc/xTGPHZCx/IMG-8590.jpg" alt="Yacht Master 126655"><div class="ref">126655</div></div>
+<div class="product"><img src="https://i.postimg.cc/YqNxgP9D/IMG-8591.jpg" alt="Yacht Master 126655"><div class="ref">126655</div></div>
+
+<!-- 116622 -->
+<div class="product"><img src="https://i.postimg.cc/7hnTCpVN/IMG-8592.png" alt="Yacht Master 116622"><div class="ref">116622</div></div>
+
+<!-- 226659 -->
+<div class="product"><img src="https://i.postimg.cc/6pgTQWKt/IMG-8593.jpg" alt="Yacht Master 226659"><div class="ref">226659</div></div>
+
+<!-- ==================== Submariner ==================== -->
+<!-- 126610 -->
+<div class="product"><img src="https://i.postimg.cc/cLwGQ03p/IMG-8594.jpg" alt="Submariner 126610"><div class="ref">126610</div></div>
+<div class="product"><img src="https://i.postimg.cc/6pnxdtZF/IMG-8595.jpg" alt="Submariner 126610"><div class="ref">126610</div></div>
+
+<!-- 124060 -->
+<div class="product"><img src="https://i.postimg.cc/631mkmRH/IMG-8596.jpg" alt="Submariner 124060"><div class="ref">124060</div></div>
+
+<!-- 116610 -->
+<div class="product"><img src="https://i.postimg.cc/k4Fx86Mk/IMG-8597.png" alt="Submariner 116610"><div class="ref">116610</div></div>
+<div class="product"><img src="https://i.postimg.cc/R0t1Spjk/IMG-8598.jpg" alt="Submariner 116610"><div class="ref">116610</div></div>
+
+<!-- ==================== Nautilus ==================== -->
+<div class="product"><img src="https://i.postimg.cc/vDRgNGmy/IMG-8599.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/FzkkpYhr/IMG-8600.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/fRPL2wq8/IMG-8601.png" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/y8xxyJjw/IMG-8602.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/4xyyQKP0/IMG-8603.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/pLrrJ9C7/IMG-8604.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/vZTTt1h2/IMG-8605.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/L8WXCHQD/IMG-8606.png" alt="Nautilus"><div class="ref">Nautilus</div></div>
+<div class="product"><img src="https://i.postimg.cc/7ZhhnC9m/IMG-8607.jpg" alt="Nautilus"><div class="ref">Nautilus</div></div>
+
+<!-- ==================== Aquanaut ==================== -->
+<div class="product"><img src="https://i.postimg.cc/tJRpRfmn/IMG-8609.jpg" alt="Aquanaut"><div class="ref">Aquanaut</div></div>
+<div class="product"><img src="https://i.postimg.cc/9FMCv69C/IMG-8610.png" alt="Aquanaut"><div class="ref">Aquanaut</div></div>
+<div class="product"><img src="https://i.postimg.cc/SNskwB9R/IMG-8611.jpg" alt="Aquanaut"><div class="ref">Aquanaut</div></div>
+
+<!-- ==================== Audemars Piguet ==================== -->
+<div class="product"><img src="https://i.postimg.cc/8kLZTchB/IMG-8612.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/HWb6TnQS/IMG-8613.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/tRFB9JhB/IMG-8614.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/sxPmmHj3/IMG-8615.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/8cd44XpP/IMG-8616.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/MZ19zHyR/IMG-8617.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/8kLZTchM/IMG-8618.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/dQG5J38C/IMG-8619.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/Df1x70q5/IMG-8621.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+<div class="product"><img src="https://i.postimg.cc/598sfyw3/IMG-8622.jpg" alt="Audemars Piguet"><div class="ref">Audemars Piguet</div></div>
+  
+</section>
+  
+<a href="https://wa.me/491636437385" class="whatsapp-float" target="_blank">WhatsApp Support</a>
+
+  <footer>
+    <p>&copy; 2026 Luxus by Marc – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Whatsapp: <a href="https://wa.me/491636437385">@Marc</a></p>
+  </footer>
+</body>
+</html>
