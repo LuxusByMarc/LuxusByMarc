@@ -1,0 +1,175 @@
+
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taschen</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+    header {
+      position: fixed; top: 0; width: 100%;
+      background: #ffffff;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 1000; height: 100px;
+    }
+    .logo img { height: 80px; }
+    nav ul { list-style: none; display: flex; gap: 30px; }
+    nav ul li { position: relative; }
+    nav a {
+      text-decoration: none; color: #222;
+      font-weight: 600; font-size: 1rem; transition: color 0.3s;
+    }
+    nav a:hover { color: #777; }
+    .dropdown {
+      position: absolute; top: 100%; left: 0;
+      background: #fff; border: 1px solid #ddd;
+      display: none; flex-direction: column;
+      padding: 10px; min-width: 200px;
+      max-height: 300px; overflow-y: auto;
+      z-index: 1000;
+    }
+    nav ul li:hover .dropdown { display: flex; }
+    .dropdown a {
+      padding: 6px 12px; color: #222; white-space: nowrap;
+    }
+    .dropdown a:hover { background-color: #f5f5f5; }
+    .content {
+      padding: 140px 20px 40px; text-align: center;
+    }
+    .content h1 { font-size: 2.4em; margin-bottom: 20px; }
+    .content p { font-size: 1em; color: #444; }
+    .brands {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 30px; padding: 40px 20px;
+    }
+    .brand {
+      width: 150px; text-align: center;
+    }
+    .brand img {
+      width: 100%; max-width: 120px; height: 80px;
+      object-fit: contain; margin: 0 auto 10px; display: block;
+    }
+    .brand-name {
+      font-size: 0.95em; font-weight: 600; color: #333;
+    }
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+.whatsapp-float:hover {
+  background: #1ebd5a;
+}
+    footer a {
+      color: #4ecdc4; text-decoration: none;
+      font-weight: 500;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <section class="content">
+    <h1>Taschen & Handtaschen</h1>
+    <p>Wähle deine Lieblingsmarke – Top-Qualität direkt vom Hersteller in 1:1 Verarbeitung.
+    Viele weiteren Taschen verfügbar, schreib uns einfach in Whatsapp an für Fragen und Bestellungen. Herrentaschen, Geldbörsen und Cardholder auch verfügbar!
+    </p>
+  </section>
+
+  <section class="brands">
+
+  <a href="bagbalenciaga.html" class="brand">
+    <img src="https://i.postimg.cc/3xLMRVPc/IMG-3667.png" alt="Balenciaga">
+    <div class="brand-name">Balenciaga</div>
+  </a>
+
+  <a href="bagchloe.html" class="brand">
+    <img src="https://i.postimg.cc/Y2mQBYsD/IMG-7577.jpg" alt="Chloé">
+    <div class="brand-name">Chloé</div>
+  </a>
+
+  <a href="bagcoach.html" class="brand">
+    <img src="https://i.postimg.cc/hPmtyG6R/IMG-7407.jpg" alt="Coach">
+    <div class="brand-name">Coach</div>
+  </a>
+
+  <a href="bagfendi.html" class="brand">
+    <img src="https://i.postimg.cc/9Qf9ZwnQ/IMG-3674.png" alt="Fendi">
+    <div class="brand-name">Fendi</div>
+  </a>
+
+  <a href="baggivenchy.html" class="brand">
+    <img src="https://i.postimg.cc/YSCwpM0V/IMG-3675.png" alt="Givenchy">
+    <div class="brand-name">Givenchy</div>
+  </a>
+
+  <a href="baggoyard.html" class="brand">
+    <img src="https://i.postimg.cc/GhbXzXXk/IMG-7505.jpg" alt="Goyard">
+    <div class="brand-name">Goyard</div>
+  </a>
+
+  <a href="baggucci.html" class="brand">
+    <img src="https://i.postimg.cc/MGCt9mCD/IMG-3676.jpg" alt="Gucci">
+    <div class="brand-name">Gucci</div>
+  </a>
+
+  <a href="baghermes.html" class="brand">
+    <img src="https://i.postimg.cc/v8k83gTm/IMG-3677.png" alt="Hermès">
+    <div class="brand-name">Hermès</div>
+  </a>
+
+  <a href="baglouis-vuitton.html" class="brand">
+    <img src="https://i.postimg.cc/V6z4ykNr/IMG-3679.png" alt="Louis Vuitton">
+    <div class="brand-name">Louis Vuitton</div>
+  </a>
+
+  <a href="bagmiumiu.html" class="brand">
+    <img src="https://i.postimg.cc/kgFt0FRs/IMG-3680.png" alt="Miu Miu">
+    <div class="brand-name">Miu Miu</div>
+  </a>
+
+  <a href="bagprada.html" class="brand">
+    <img src="https://i.postimg.cc/QC39t0PH/IMG-3683.png" alt="Prada">
+    <div class="brand-name">Prada</div>
+  </a>
+
+  <a href="bagvalentino.html" class="brand">
+    <img src="https://i.postimg.cc/wjTWMV8f/IMG-3687.png" alt="Valentino">
+    <div class="brand-name">Valentino</div>
+  </a>
+
+  <a href="bagversace.html" class="brand">
+    <img src="https://i.postimg.cc/J0xNCfn1/IMG-3688.png" alt="Versace">
+    <div class="brand-name">Versace</div>
+  </a>
+
+  <a href="bagysl.html" class="brand">
+    <img src="https://i.postimg.cc/dV2c9rvL/IMG-7743.jpg" alt="Yves Saint Laurent">
+    <div class="brand-name">Yves Saint Laurent</div>
+  </a>
+
+</section>
+<a href="https://wa.me/491636437385" class="whatsapp-float" target="_blank">WhatsApp Support</a>
+
+  <footer>
+    <p>&copy; 2026 Luxus by Marc – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Whatsapp: <a href="https://wa.me/491636437385">@Marc</a></p>
+  </footer>
+</body>
+</html>
