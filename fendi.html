@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxus by Marc</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      height: 100px;
+    }
+
+    .logo img { height: 80px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #777; }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .content {
+      padding: 140px 20px 40px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product-card .details {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+.whatsapp-float:hover {
+  background: #1ebd5a;
+}
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+
+  <section class="content">
+    <h1>Kollektion</h1>
+    <p>Größen verfügbar von S bis 3XL<br />Gerne auch eigene Wunschmodelle senden – wir prüfen Verfügbarkeit.</p>
+  </section>
+
+  <section class="products">
+<div class="product-card"><img src="https://i.postimg.cc/3JkcF95J/IMG-4121.jpg" alt="Artikel 9700"><div class="details"><h3>Artikel 9700</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/TwQ4C43h/IMG-4122.jpg" alt="Artikel 9701"><div class="details"><h3>Artikel 9701</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/5y0kGSXg/IMG-4123.jpg" alt="Artikel 9702"><div class="details"><h3>Artikel 9702</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/cHdz7SZV/IMG-4124.jpg" alt="Artikel 9703"><div class="details"><h3>Artikel 9703</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/JhNgBnwN/IMG-4125.jpg" alt="Artikel 9704"><div class="details"><h3>Artikel 9704</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/J7PfqGsK/IMG-4126.jpg" alt="Artikel 9705"><div class="details"><h3>Artikel 9705</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/VvL3wcVj/IMG-4127.jpg" alt="Artikel 9706"><div class="details"><h3>Artikel 9706</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/FzWwsnMw/IMG-4128.jpg" alt="Artikel 9707"><div class="details"><h3>Artikel 9707</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/0QCLhNck/IMG-4129.jpg" alt="Artikel 9708"><div class="details"><h3>Artikel 9708</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/DwJ3mny6/IMG-4130.jpg" alt="Artikel 9709"><div class="details"><h3>Artikel 9709</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/RhgxJ0Hs/IMG-4131.jpg" alt="Artikel 9710"><div class="details"><h3>Artikel 9710</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/dt0YPGbz/IMG-4132.jpg" alt="Artikel 9711"><div class="details"><h3>Artikel 9711</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/ZYHSMwM8/IMG-4133.jpg" alt="Artikel 9712"><div class="details"><h3>Artikel 9712</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/mgJRSh6K/IMG-4134.jpg" alt="Artikel 9713"><div class="details"><h3>Artikel 9713</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/Z5C436jr/IMG-4135.jpg" alt="Artikel 9714"><div class="details"><h3>Artikel 9714</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/nztJ6gxk/IMG-4136.jpg" alt="Artikel 9715"><div class="details"><h3>Artikel 9715</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/d1mYv6tK/IMG-4137.jpg" alt="Artikel 9716"><div class="details"><h3>Artikel 9716</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/PqvfG1wt/IMG-4138.jpg" alt="Artikel 9717"><div class="details"><h3>Artikel 9717</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/gjmG65BJ/IMG-4139.jpg" alt="Artikel 9718"><div class="details"><h3>Artikel 9718</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/G2kctrKV/IMG-4140.jpg" alt="Artikel 9719"><div class="details"><h3>Artikel 9719</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/FRtrh1y0/IMG-4141.jpg" alt="Artikel 9720"><div class="details"><h3>Artikel 9720</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/VL4kXfwc/IMG-4142.jpg" alt="Artikel 9721"><div class="details"><h3>Artikel 9721</h3><p>20 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/jj60RdmR/IMG-4143.jpg" alt="Artikel 9722"><div class="details"><h3>Artikel 9722</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/FKXXtJPP/IMG-4144.jpg" alt="Artikel 9723"><div class="details"><h3>Artikel 9723</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/pLFM1BBh/IMG-4145.jpg" alt="Artikel 9724"><div class="details"><h3>Artikel 9724</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/fTFhKPYQ/IMG-4146.jpg" alt="Artikel 9725"><div class="details"><h3>Artikel 9725</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/7YbkS4GN/IMG-4147.jpg" alt="Artikel 9726"><div class="details"><h3>Artikel 9726</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/J7p8y0nn/IMG-4148.jpg" alt="Artikel 9727"><div class="details"><h3>Artikel 9727</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/QCYZv4P5/IMG-4149.jpg" alt="Artikel 9728"><div class="details"><h3>Artikel 9728</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/W3nvwbw5/IMG-4150.jpg" alt="Artikel 9729"><div class="details"><h3>Artikel 9729</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/kGgd13jq/IMG-4151.jpg" alt="Artikel 9730"><div class="details"><h3>Artikel 9730</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/9fyVzBR5/IMG-4152.jpg" alt="Artikel 9731"><div class="details"><h3>Artikel 9731</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/XJ3W5ydZ/IMG-4153.jpg" alt="Artikel 9732"><div class="details"><h3>Artikel 9732</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/3x43Qh3w/IMG-4154.jpg" alt="Artikel 9733"><div class="details"><h3>Artikel 9733</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/Z5G4TQqx/IMG-4155.jpg" alt="Artikel 9734"><div class="details"><h3>Artikel 9734</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/MKrzLH24/IMG-4156.jpg" alt="Artikel 9735"><div class="details"><h3>Artikel 9735</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/c4JsTYjw/IMG-4157.jpg" alt="Artikel 9736"><div class="details"><h3>Artikel 9736</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/MZ56ytsz/IMG-4158.jpg" alt="Artikel 9737"><div class="details"><h3>Artikel 9737</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/j2MRtdWD/IMG-4159.jpg" alt="Artikel 9738"><div class="details"><h3>Artikel 9738</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/QC8j2WML/IMG-4160.jpg" alt="Artikel 9739"><div class="details"><h3>Artikel 9739</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/vBLQ2vbL/IMG-4161.jpg" alt="Artikel 9740"><div class="details"><h3>Artikel 9740</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/G21Ljfwm/IMG-4162.jpg" alt="Artikel 9741"><div class="details"><h3>Artikel 9741</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/1zFRwQdd/IMG-4163.jpg" alt="Artikel 9742"><div class="details"><h3>Artikel 9742</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/8z9P75ZW/IMG-4164.jpg" alt="Artikel 9743"><div class="details"><h3>Artikel 9743</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/fTWbF133/IMG-4165.jpg" alt="Artikel 9744"><div class="details"><h3>Artikel 9744</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/FH7HFcVN/IMG-4166.jpg" alt="Artikel 9745"><div class="details"><h3>Artikel 9745</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/HsSLC356/IMG-4167.jpg" alt="Artikel 9746"><div class="details"><h3>Artikel 9746</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/9XYMLcf5/IMG-4168.jpg" alt="Artikel 9747"><div class="details"><h3>Artikel 9747</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/Hnzkn9Ns/IMG-4169.jpg" alt="Artikel 9748"><div class="details"><h3>Artikel 9748</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/WzT4sHXH/IMG-4170.jpg" alt="Artikel 9749"><div class="details"><h3>Artikel 9749</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/vBWBFsLn/IMG-4171.jpg" alt="Artikel 9750"><div class="details"><h3>Artikel 9750</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/j5V5F5NK/IMG-4172.jpg" alt="Artikel 9751"><div class="details"><h3>Artikel 9751</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/0yBr7Zyz/IMG-4173.jpg" alt="Artikel 9752"><div class="details"><h3>Artikel 9752</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/25LyGv12/IMG-4174.jpg" alt="Artikel 9753"><div class="details"><h3>Artikel 9753</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/8z5jFxN8/IMG-4175.jpg" alt="Artikel 9754"><div class="details"><h3>Artikel 9754</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/rFgDwq6C/IMG-4176.jpg" alt="Artikel 9755"><div class="details"><h3>Artikel 9755</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/8kRFxhtY/IMG-4177.jpg" alt="Artikel 9756"><div class="details"><h3>Artikel 9756</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/J4Ry8GFz/IMG-4178.jpg" alt="Artikel 9757"><div class="details"><h3>Artikel 9757</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/L53nfpJS/IMG-4179.jpg" alt="Artikel 9758"><div class="details"><h3>Artikel 9758</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/FRcfrcm7/IMG-4180.jpg" alt="Artikel 9759"><div class="details"><h3>Artikel 9759</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/0NhM1nTT/IMG-4181.jpg" alt="Artikel 9760"><div class="details"><h3>Artikel 9760</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/hvBXfjPM/IMG-4182.jpg" alt="Artikel 9761"><div class="details"><h3>Artikel 9761</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/MGnMLNF0/IMG-4183.jpg" alt="Artikel 9762"><div class="details"><h3>Artikel 9762</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/cL48Rr7b/IMG-4184.jpg" alt="Artikel 9763"><div class="details"><h3>Artikel 9763</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/PrHDq6Ch/IMG-4185.jpg" alt="Artikel 9764"><div class="details"><h3>Artikel 9764</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/SQC8k0ND/IMG-4186.jpg" alt="Artikel 9765"><div class="details"><h3>Artikel 9765</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/xTPzNKmm/IMG-4187.jpg" alt="Artikel 9766"><div class="details"><h3>Artikel 9766</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/Ssz9n3LQ/IMG-4188.jpg" alt="Artikel 9767"><div class="details"><h3>Artikel 9767</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/YSPgqMWy/IMG-4189.jpg" alt="Artikel 9768"><div class="details"><h3>Artikel 9768</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/zvCRjhP9/IMG-4190.jpg" alt="Artikel 9769"><div class="details"><h3>Artikel 9769</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/Bb9KHpNT/IMG-4191.jpg" alt="Artikel 9770"><div class="details"><h3>Artikel 9770</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/mrkCsttH/IMG-4192.jpg" alt="Artikel 9771"><div class="details"><h3>Artikel 9771</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/YCpQdX78/IMG-4193.jpg" alt="Artikel 9772"><div class="details"><h3>Artikel 9772</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/3Jjgjssd/IMG-4194.jpg" alt="Artikel 9773"><div class="details"><h3>Artikel 9773</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/P52Y9mrH/IMG-4195.jpg" alt="Artikel 9774"><div class="details"><h3>Artikel 9774</h3><p>25 EUR</p></div></div>
+<div class="product-card"><img src="https://i.postimg.cc/QxZQT8n2/IMG-4196.jpg" alt="Artikel 9775"><div class="details"><h3>Artikel 9775</h3><p>25 EUR</p></div></div>
+
+</section>
+  
+<a href="https://wa.me/491636437385" class="whatsapp-float" target="_blank">WhatsApp Support</a>
+
+  <footer>
+    <p>&copy; 2026 Luxus by Marc – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Whatsapp: <a href="https://wa.me/491636437385">@Marc </a></p>
+  </footer>
+</body>
+</html>
