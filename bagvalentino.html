@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxus by Marc</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      height: 100px;
+    }
+
+    .logo img { height: 80px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #777; }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .content {
+      padding: 140px 20px 40px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product-card .details {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+.whatsapp-float:hover {
+  background: #1ebd5a;
+}
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+
+  <section class="content">
+    <h1>Taschen – Kollektion</h1>
+    <p>Gerne auch eigene Wunschmodelle senden – wir prüfen Verfügbarkeit.</p>
+  </section>
+
+  <section class="products">
+   <div class="product-card"><img src="https://i.postimg.cc/dt8pW7mP/IMG-7518.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/0yP3h8cQ/IMG-7519.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/htcwNSpv/IMG-7520.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/JzMgS1Ph/IMG-7521.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/RZd8BjDX/IMG-7522.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/L8D7prbx/IMG-7523.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/Dw6DTtM8/IMG-7524.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/rwjbkvPw/IMG-7525.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/4xsMjJBK/IMG-7526.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/9ffkFJ6v/IMG-7527.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/mrrn28vK/IMG-7528.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/g007kNCt/IMG-7529.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/d00ft4b9/IMG-7530.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/XvvP7QRc/IMG-7531.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/cJ5bKfZx/IMG-7532.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/d0Sx7GvP/IMG-7533.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/5tkRH8JD/IMG-7534.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/hGGYP2FB/IMG-7535.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/YSSPqdcB/IMG-7536.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/PqFRL1hD/IMG-7537.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/q7Z5t20C/IMG-7538.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/KYsHKtFj/IMG-7539.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/N0PzyRY0/IMG-7540.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/rpYPd5cy/IMG-7541.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/pTh1KyXk/IMG-7542.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/zBbPT3XK/IMG-7543.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/0QMH7r2M/IMG-7544.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/vBgS5DH1/IMG-7545.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/RF6bwqVq/IMG-7546.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/90y8NS9T/IMG-7547.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/D01jYDGm/IMG-7548.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/Kz6pfF1Y/IMG-7549.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/nzyS2ZX8/IMG-7550.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/zBs275Vj/IMG-7551.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/vHdS6YRD/IMG-7552.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/kMSp4VH2/IMG-7553.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/44cSdK0m/IMG-7554.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/SQ9vsXvw/IMG-7555.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/CM8Q1ZQQ/IMG-7556.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/J4cYNfmK/IMG-7557.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/ncYS4yZv/IMG-7558.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/X70DyjML/IMG-7559.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/c4N58xqB/IMG-7560.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/KvysgGXT/IMG-7561.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/kXFYQ0q7/IMG-7562.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/gkqtVCmb/IMG-7563.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/vHL2rJMJ/IMG-7564.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/TYqNVzGF/IMG-7565.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/zXS2Cs5P/IMG-7566.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/P5S6c1C1/IMG-7567.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/9QLxSyD9/IMG-7568.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/DwxCD1Sm/IMG-7569.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/g2zSNg2v/IMG-7570.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/9Qm8JLQC/IMG-7571.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/rpzhLz4g/IMG-7572.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/9QLxSyDk/IMG-7573.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/6pMHSC8b/IMG-7574.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/ht2CwVXp/IMG-7575.jpg"></div>
+<div class="product-card"><img src="https://i.postimg.cc/VkK7TXJR/IMG-7576.jpg"></div>
+  </section>
+  
+<a href="https://wa.me/491636437385" class="whatsapp-float" target="_blank">WhatsApp Support</a>
+
+  <footer>
+    <p>&copy; 2026 Luxus bz Marc – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Whatsapp: <a href="https://wa.me/491636437385">@Marc</a></p>
+  </footer>
+</body>
+</html>
