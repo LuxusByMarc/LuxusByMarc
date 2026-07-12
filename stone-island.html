@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxus by Marc</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #ffffff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      height: 100px;
+    }
+
+    .logo img { height: 80px; }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover { color: #777; }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      display: none;
+      flex-direction: column;
+      padding: 10px;
+      min-width: 200px;
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    nav ul li:hover .dropdown {
+      display: flex;
+    }
+
+    .dropdown a {
+      padding: 6px 12px;
+      color: #222;
+      white-space: nowrap;
+    }
+
+    .dropdown a:hover {
+      background-color: #f5f5f5;
+    }
+
+    .content {
+      padding: 140px 20px 40px;
+      text-align: center;
+    }
+
+    .content h1 {
+      font-size: 2.4em;
+      margin-bottom: 20px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px 20px;
+    }
+
+    .product-card {
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+    }
+
+    .product-card .details {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .product-card h3 {
+      font-size: 1.1em;
+      margin-bottom: 8px;
+    }
+
+    .product-card p {
+      font-size: 0.95em;
+      color: #444;
+    }
+
+    .whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  z-index: 999;
+}
+.whatsapp-float:hover {
+  background: #1ebd5a;
+}
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #ffffff;
+      color: #666;
+      border-top: 1px solid #eee;
+    }
+
+    footer a {
+      color: #4ecdc4;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+
+  <section class="content">
+    <h1>Kollektion</h1>
+    <p>Größen verfügbar von S bis 3XL<br />Gerne auch eigene Wunschmodelle senden – wir prüfen Verfügbarkeit.</p>
+  </section>
+
+  <section class="products">
+<div class="product-card"><img src="https://i.postimg.cc/XvfJTQTY/IMG-3717.jpg" alt="Artikel 3001"><div class="details"><h3>Artikel 3001</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/XNmbk9zH/IMG-3718.jpg" alt="Artikel 3002"><div class="details"><h3>Artikel 3002</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/kG3dqmKr/IMG-3719.jpg" alt="Artikel 3003"><div class="details"><h3>Artikel 3003</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/tgKcVzTW/IMG-3720.jpg" alt="Artikel 3004"><div class="details"><h3>Artikel 3004</h3><p>20 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/GpGQ6nLT/IMG-3721.jpg" alt="Artikel 3005"><div class="details"><h3>Artikel 3005</h3><p>20 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/mgx1JztV/IMG-3722.jpg" alt="Artikel 3006"><div class="details"><h3>Artikel 3006</h3><p>20 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/Jzc0FTw4/IMG-3723.jpg" alt="Artikel 3007"><div class="details"><h3>Artikel 3007</h3><p>20 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/3w8CRS2d/IMG-3724.jpg" alt="Artikel 3008"><div class="details"><h3>Artikel 3008</h3><p>20 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/BvjbM20m/IMG-3725.jpg" alt="Artikel 3009"><div class="details"><h3>Artikel 3009</h3><p>20 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/jdqsMy6y/IMG-3726.jpg" alt="Artikel 3010"><div class="details"><h3>Artikel 3010</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/wjsn2Brh/IMG-3727.jpg" alt="Artikel 3011"><div class="details"><h3>Artikel 3011</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/3NvbBSS3/IMG-3728.jpg" alt="Artikel 3012"><div class="details"><h3>Artikel 3012</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/3wPKJ6vT/IMG-3729.jpg" alt="Artikel 3013"><div class="details"><h3>Artikel 3013</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/c1zc1BDc/IMG-3730.jpg" alt="Artikel 3014"><div class="details"><h3>Artikel 3014</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/NMkfJDKv/IMG-3731.jpg" alt="Artikel 3015"><div class="details"><h3>Artikel 3015</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/pLPTjgrY/IMG-3732.jpg" alt="Artikel 3016"><div class="details"><h3>Artikel 3016</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/cLTQt7xC/IMG-3733.jpg" alt="Artikel 3017"><div class="details"><h3>Artikel 3017</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/8znxB6wk/IMG-3734.jpg" alt="Artikel 3018"><div class="details"><h3>Artikel 3018</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/zXWcRGP6/IMG-3735.jpg" alt="Artikel 3019"><div class="details"><h3>Artikel 3019</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/8CV4Qdpz/IMG-3736.jpg" alt="Artikel 3020"><div class="details"><h3>Artikel 3020</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/rw6yTsvp/IMG-3737.jpg" alt="Artikel 3021"><div class="details"><h3>Artikel 3021</h3><p>25 EUR</p></div></div>
+    <div class="product-card"><img src="https://i.postimg.cc/jSZfvBgK/IMG-3738.jpg" alt="Artikel 3022"><div class="details"><h3>Artikel 3022</h3><p>25 EUR</p></div></div>
+
+</section>
+  
+<a href="https://wa.me/491636437385" class="whatsapp-float" target="_blank">WhatsApp Support</a>
+
+  <footer>
+    <p>&copy; 2026 Luxus by Marc – Alle Rechte vorbehalten</p>
+    <p>Kontakt via Whatsapp: <a href="https://wa.me/491636437385">@Marc</a></p>
+  </footer>
+</body>
+</html>
